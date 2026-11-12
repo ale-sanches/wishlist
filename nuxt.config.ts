@@ -2,6 +2,13 @@
 export default defineNuxtConfig({
     modules: ['@nuxt/eslint', '@nuxt/ui'],
     devtools: {enabled: true},
+    app: {
+        head: {
+            htmlAttrs: {lang: 'ru'},
+            link: [
+                {rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg'},]
+        }
+    },
     ui: {fonts: true},
     fonts: {
         families: [{name: 'Inter Variable', provider: 'none'}],
